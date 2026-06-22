@@ -1,9 +1,6 @@
 name: Publish
 
-# Publish @clipform/n8n-nodes-clipform to npm. This is a PUBLIC repo, so Actions
-# minutes are free + unlimited, and npm provenance works (required for n8n
-# verified community nodes from 2026-05-01).
-#
+# Publish @clipform/n8n-nodes-clipform to npm with provenance.
 # First run with dry_run=true (default) to validate packaging; re-run with
 # dry_run=false to publish. Bump "version" in package.json before a real publish.
 

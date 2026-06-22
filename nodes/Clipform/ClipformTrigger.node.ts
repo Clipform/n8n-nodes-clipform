@@ -12,8 +12,7 @@ const BASE_URL = 'https://api.clipform.io';
 /**
  * Trigger node: starts a workflow whenever a Clipform form is completed.
  *
- * Uses Clipform's connect webhook lane (the same one Zapier/Make use): on
- * activation it registers n8n's webhook URL via POST /v1/connect/hooks and
+ * On activation it registers n8n's webhook URL via POST /v1/connect/hooks and
  * stores the returned subscription id; on deactivation it deletes it. The
  * subscription is workspace-wide - every form's completion fires it - so the
  * payload's form_id / form_name / form_tags are used to filter downstream.

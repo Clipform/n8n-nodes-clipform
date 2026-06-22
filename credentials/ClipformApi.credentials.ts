@@ -29,7 +29,6 @@ export class ClipformApi implements ICredentialType {
 		},
 	];
 
-	// Sends the key as a Bearer token on every request the node makes.
 	authenticate: IAuthenticateGeneric = {
 		type: 'generic',
 		properties: {
@@ -39,7 +38,6 @@ export class ClipformApi implements ICredentialType {
 		},
 	};
 
-	// Verifies the key when the credential is saved.
 	test: ICredentialTestRequest = {
 		request: {
 			baseURL: 'https://api.clipform.io',

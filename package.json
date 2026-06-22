@@ -1,0 +1,47 @@
+{
+  "name": "@clipform/n8n-nodes-clipform",
+  "version": "0.1.0",
+  "description": "n8n community node for Clipform - trigger a workflow when a form is completed",
+  "keywords": [
+    "n8n-community-node-package",
+    "clipform",
+    "forms",
+    "webhook",
+    "video"
+  ],
+  "license": "MIT",
+  "homepage": "https://clipform.io",
+  "author": {
+    "name": "Reco Ventures Ltd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clipform/n8n-nodes-clipform.git"
+  },
+  "engines": {
+    "node": ">=20.15"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').cpSync('nodes/Clipform/clipform.svg','dist/nodes/Clipform/clipform.svg')\"",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/ClipformApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Clipform/ClipformTrigger.node.js"
+    ]
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "devDependencies": {
+    "n8n-workflow": "^1.70.0",
+    "typescript": "^5.5.0"
+  }
+}

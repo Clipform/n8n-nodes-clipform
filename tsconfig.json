@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2019",
+    "lib": ["es2019", "es2020", "es2021"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "sourceMap": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "useUnknownInCatchVariables": false
+  },
+  "include": ["credentials/**/*", "nodes/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

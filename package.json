@@ -1,6 +1,6 @@
 {
   "name": "@clipform/n8n-nodes-clipform",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "n8n community node for Clipform - trigger a workflow when a form is completed",
   "keywords": [
     "n8n-community-node-package",

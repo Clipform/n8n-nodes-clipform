@@ -1,6 +1,6 @@
 {
   "name": "@clipform/n8n-nodes-clipform",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "n8n community node for Clipform - trigger a workflow when a form is completed",
   "keywords": [
     "n8n-community-node-package",
@@ -12,8 +12,8 @@
   "license": "MIT",
   "homepage": "https://clipform.io",
   "author": {
-    "name": "Reco Ventures Ltd",
-    "email": "app@clipform.io"
+    "name": "Clipform",
+    "email": "support@clipform.io"
   },
   "repository": {
     "type": "git",
